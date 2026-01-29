@@ -15,7 +15,7 @@ import BookCataloguePage from './pages/BookCataloguePage'
 import NotFound from './pages/NotFound'
 import BookCreate from './pages/BookCreate'
 import BookEdit from './pages/BookEdit'
-import './styles/global.scss'
+import './styles/Global.scss'
 
 createRoot(document.body).render(
   <StrictMode>
