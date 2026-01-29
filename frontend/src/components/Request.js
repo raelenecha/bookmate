@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-	baseURL: import.meta.env.DEV ? "http://localhost:5050" : "https://bookmate-backend.onrender.com",
+	baseURL: import.meta.env.DEV ? "http://localhost:5050" : "https://bookmate-backend-y412.onrender.com",
 	headers: {
 		"Content-Type": "application/json",
 	},
