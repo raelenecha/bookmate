@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "696897571929d4cd0212544f"
+  },
+  "name": "John Tan",
+  "password": "$2b$10$GhCUN.ynmMiWBY7fF73FHe/CaRWaFeyo5Z7q5s/eTYcb8YSUKpOI.",
+  "points": 130,
+  "role": "student"
+},
+{
+  "_id": {
+    "$oid": "696897571929d4cd02125450"
+  },
+  "name": "Jane Lim",
+  "password": "$2b$10$2XSxuLihFOH29eHz8S/zw.zXKwLv4f0ZweM3zoskJB3NTJuxrIUju",
+  "points": 70,
+  "role": "student"
+},
+{
+  "_id": {
+    "$oid": "697a23fd6e42a49b57b8403b"
+  },
+  "name": "Admin",
+  "password": "$2b$10$9iRytoDTPHNiCXYS.yzleedeEV7boBMS8t7Y2ucTj0LoNmR6jXLBK",
+  "points": 0,
+  "role": "admin"
+}]

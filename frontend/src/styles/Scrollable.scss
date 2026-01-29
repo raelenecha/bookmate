@@ -1,0 +1,116 @@
+.scrollable_container {
+    height: calc(100vh - 105px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.85)),
+            url("/bg.png") center / cover no-repeat;
+        z-index: 0;
+    }
+
+    .scrollable_selector {
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        z-index: 3;
+        margin-bottom: 10px;
+
+        input {
+            display: none;
+        }
+
+        label {
+            width: 15px;
+            aspect-ratio: 1;
+            height: 15px;
+            cursor: pointer;
+            border-radius: 99px;
+            background: #afc0cf;
+            transition: all 0.3s ease;
+        }
+
+        input:checked + label {
+            background: #083e7b;
+            width: 50px;
+            height: 15px;
+        }
+    }
+
+    .scrollable_list {
+        z-index: 3;
+        flex: 1;
+        position: relative;
+        display: flex;
+        min-width: 0;
+        width: 300vw;
+        transition: transform 0.5s ease;
+
+        .scrollable_item {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            color: white;
+
+            img {
+                width: 200px;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+
+        .scrollable_item_info {
+            width: 400px;
+
+            h3 {
+                font-size: 30px;
+            }
+
+            >p:last-of-type {
+                margin-top: 20px;
+            }
+
+            >span {
+                padding: 5px 10px;
+                background: #afc0cf;
+                margin: 10px 0;
+                display: inline-block;
+                border-radius: 20px;
+                color: black;
+                font-size: 12px;
+            }
+
+            button {
+                margin-top: 20px;
+                padding: 8px 30px;
+                border-radius: 20px;
+                border: none;
+                background: #083e7b;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    h2 {
+        margin: 20px 0 0 20px;
+        color: white;
+        z-index: 3;
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}

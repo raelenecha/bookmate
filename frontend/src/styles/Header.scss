@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "apple";
+  src: url("/LogoFont.ttf") format("truetype");
+}
+
+.header {
+  font-family: "apple" !important;
+  background-color: #afc0cf;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 60px;
+  }
+}
+
+.leftGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.logo {
+  font-family: "apple", sans-serif;
+  color: #083e7b;
+  margin: 0;
+  line-height: 1;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 10px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.menuIcon {
+  color: #083e7b;
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+.searchInput {
+  padding: 0 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #083e7b;
+
+  &::placeholder {
+    color: rgba(8, 62, 123, 0.55);
+  }
+}
+
+.searchBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+}
+
+.rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rightGroup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #083e7b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: max-content;
+
+  &:hover {
+    background-color: #062d57;
+  }
+}
+
+.rightGroup i {
+  margin-right: 8px;
+}

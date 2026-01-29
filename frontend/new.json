@@ -1,0 +1,176 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "John Tan",
+            "email": "n6M0V@example.com",
+            "role": "student",
+            "password": "password123",
+            "points": 450,
+            "loans": 0
+        },
+        {
+            "id": "2",
+            "name": "Jane Lim",
+            "role": "student",
+            "password": "password123",
+            "points": 0,
+            "loans": 1
+        }
+    ],
+    "categories": [
+        {
+            "id": "c1",
+            "name": "Fiction"
+        },
+        {
+            "id": "c2",
+            "name": "Fantasy"
+        },
+        {
+            "id": "c3",
+            "name": "Dystopian"
+        },
+        {
+            "id": "c4",
+            "name": "Non-Fiction"
+        },
+        {
+            "id": "c5",
+            "name": "Self-Help"
+        },
+        {
+            "id": "c6",
+            "name": "Programming"
+        }
+    ],
+    "books": [
+        {
+            "id": "101",
+            "title": "Wonder",
+            "author": "R. J. Palacio",
+            "categoryId": "c1",
+            "image": "/images/wonderbook.jpg",
+            "rating": 4,
+            "reservedBy": "1",
+            "dueDate": "2026-01-20"
+        },
+        {
+            "id": "102",
+            "title": "The Hunger Games",
+            "author": "Suzanne Collins",
+            "categoryId": "c3",
+            "image": "/images/hungerbook.jpg",
+            "reservedBy": "1",
+            "waitlistCount": 1,
+            "rating": null,
+            "dueDate": null
+        },
+        {
+            "id": "103",
+            "title": "Harry Potter and the Philosopher's Stone",
+            "author": "J.K. Rowling",
+            "categoryId": "c2",
+            "image": "/images/harrypotterbook.jpg",
+            "rating": 5,
+            "reservedBy": "1",
+            "dueDate": null
+        },
+        {
+            "id": "104",
+            "title": "Tuesdays with Morrie",
+            "author": "Mitch Albom",
+            "categoryId": "c1",
+            "image": "/images/mitchalbombook.jpg",
+            "rating": 5,
+            "reservedBy": null,
+            "dueDate": null
+        },
+        {
+            "id": "105",
+            "title": "Lee Kuan Yew: The Man and His Ideas",
+            "author": "Han Fook Kwang, Warren Fernandez, Sumiko Tan",
+            "categoryId": "c4",
+            "image": "/images/lkybook.jpg",
+            "rating": null,
+            "reservedBy": null,
+            "dueDate": null
+        },
+        {
+            "id": "106",
+            "title": "Learning React (Beginner Guide)",
+            "author": "TP Library Collection",
+            "categoryId": "c6",
+            "image": "/images/reactbook.png",
+            "rating": null,
+            "reservedBy": null,
+            "dueDate": null
+        }
+    ],
+    "reservations": [
+        {
+            "id": "res-1",
+            "bookId": "103",
+            "userId": "1",
+            "createdAt": "2025-01-01T10:00:00.000Z"
+        },
+        {
+            "id": "res-1767499887053",
+            "userId": "1",
+            "bookId": "101",
+            "createdAt": "2026-01-04T04:11:27.053Z"
+        },
+        {
+            "id": "res-1767504307795",
+            "bookId": "102",
+            "userId": "2",
+            "createdAt": "2026-01-04T05:25:07.795Z"
+        },
+        {
+            "id": "res-1767504435179",
+            "bookId": "103",
+            "userId": "2",
+            "createdAt": "2026-01-04T05:27:15.179Z"
+        },
+        {
+            "id": "res-1767513471483",
+            "bookId": "106",
+            "userId": "2",
+            "createdAt": "2026-01-04T07:57:51.483Z"
+        },
+        {
+            "id": "res-1767515529478",
+            "bookId": "104",
+            "userId": "1",
+            "createdAt": "2026-01-04T08:32:09.478Z"
+        }
+    ],
+    "rewards": [
+        {
+            "id": "r1",
+            "name": "First Book Borrowed",
+            "points": 50,
+            "description": "Awarded upon borrowing the first book"
+        },
+        {
+            "id": "r2",
+            "name": "Active Reader",
+            "points": 100,
+            "description": "Awarded for multiple loans"
+        },
+        {
+            "id": "r3",
+            "name": "Waitlist Joiner",
+            "points": 30,
+            "description": "Awarded upon joining a waitlist"
+        }
+    ],
+    "attainedRewards": [
+        {
+            "id": "ar-1",
+            "userId": "1",
+            "rewardId": "r1",
+            "dateAttained": "2025-01-02"
+        }
+    ]
+}

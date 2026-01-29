@@ -1,0 +1,177 @@
+.rewardsPage {
+  display: flex;
+  gap: 50px;
+  padding: 20px 150px;
+}
+
+/* LEFT SECTION */
+.rewardsLeft {
+  flex: 1;
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pointsText {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.progressBar {
+  width: 100%;
+  max-width: 500px;
+  height: 14px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progressFill {
+  border-radius: 20px;
+  height: 100%;
+  background-color: #7d8fa3;
+  transition: width 0.4s ease;
+}
+
+.tiersContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 10px 0 20px 0;
+}
+
+.tier {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+
+  &[data-selected="true"] {
+    border: 2px solid #7d8fa3;
+  }
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.badgesContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.badgeCard {
+  width: 190px;
+  border: 2px solid #aec5df;
+  border-radius: 10px;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+
+  &.attained {
+    background: #aec5df;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  &:hover span {
+    opacity: 1;
+  }
+
+  &::before {
+    transition: all 0.3s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0px);
+    border-radius: 10px;
+  }
+
+  &:hover::before {
+    backdrop-filter: blur(8px);
+  }
+}
+
+.badgeIcon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.badgeTitle {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.badgeDate {
+  font-size: 14px;
+  color: #333;
+}
+
+/* RIGHT SECTION */
+.rewardsRight {
+  width: 300px;
+}
+
+.leaderboardHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  border-bottom: 1px solid #999;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.leaderboardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leaderboardRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.accountPage .myRewards {
+  width: auto;
+  flex: none;
+  display: inline-flex;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+
+  background: #e0e0e0;
+  color: #111;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.accountPage .myRewards {
+  background: #e0e0e0 !important;
+  color: #111 !important;
+  width: auto !important;
+}

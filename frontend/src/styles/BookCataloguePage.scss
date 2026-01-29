@@ -1,0 +1,82 @@
+.catalogueLayout {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 30px 32px;
+	gap: 24px;
+	align-items: start;
+}
+
+.searchInputWrap {
+	display: flex;
+	position: relative;
+	background: #d6dde5;
+	border-radius: 14px;
+	padding: 12px 14px;
+	margin-bottom: 14px;
+}
+
+.searchIcon {
+	position: absolute;
+	left: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0.7;
+}
+
+.searchInput {
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+	padding-left: 32px;
+	font-size: 15px;
+}
+
+.catalogueGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 16px;
+}
+
+.catalogueCard {
+	width: 100%;
+	background: white;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+	transition: transform 0.2s ease;
+	opacity: 0;
+	animation: fadeIn 0.5s ease forwards;
+
+	&:hover {
+		transform: translateY(-5px);
+	}
+}
+
+.addBookBtn {
+	background: #083e7b;
+	border-radius: 14px;
+	padding: 5px 14px;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.buttons {
+	display: flex;
+	gap: 5px;
+	width: 100%;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

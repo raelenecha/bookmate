@@ -1,0 +1,173 @@
+.topratedPage {
+	padding: 40px 60px;
+	display: flex;
+	justify-content: center;
+	background: #ffffff;
+}
+
+.topratedGrid {
+	margin: 20px auto;
+	width: 980px;
+	background: #eef1f5;
+	border-radius: 16px;
+	padding: 26px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+	display: grid;
+	grid-template-columns: 320px 1fr;
+	gap: 28px;
+}
+
+/* cover */
+.coverBox {
+	width: 100%;
+	height: 420px;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.coverBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.coverBox i {
+	font-size: 44px;
+	color: #1f2937;
+}
+
+/* crumbs */
+.crumbs {
+	font-size: 13px;
+	color: #64748b;
+	margin: 0 0 10px 0;
+}
+
+.crumbsep {
+	margin: 0 8px;
+}
+
+.crumbtitle {
+	color: #083e7b;
+	font-weight: 700;
+}
+
+/* title + meta */
+.bookTitle {
+	font-size: 26px;
+	color: #111827;
+	margin: 0 0 10px 0;
+}
+
+.metaRow {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.pill {
+	font-weight: normal;
+	width: max-content;
+	background: #d7dee6;
+	color: #111827;
+	font-size: 13px;
+	padding: 6px 10px;
+	border-radius: 999px;
+}
+
+.authorText {
+	color: #334155;
+	font-weight: 600;
+}
+
+/* rating */
+.ratingRow {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 18px;
+}
+
+.ratingText {
+	font-weight: 700;
+	color: #111827;
+}
+
+/* description */
+.sectionTitle {
+	font-size: 16px;
+	margin: 0 0 8px 0;
+	color: #111827;
+	font-weight: 800;
+}
+
+.descText {
+	margin: 0 0 18px 0;
+	color: #334155;
+	line-height: 1.5;
+	max-width: 620px;
+}
+
+/* action */
+.actionRow {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-top: 8px;
+}
+
+.reserveBtn {
+	padding: 12px 18px;
+	background: #083e7b;
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	font-weight: 800;
+	cursor: pointer;
+	min-width: 150px;
+}
+
+.reserveBtn:hover {
+	background: #062d57;
+}
+
+.reserveBtn:disabled {
+	opacity: 0.65;
+	cursor: not-allowed;
+}
+
+.smallNote {
+	padding: 5px 10px;
+	border-radius: 20px;
+	background: #afc0cf;
+	font-size: 13px;
+	color: #64748b;
+}
+
+/* responsive */
+@media (max-width: 1000px) {
+	.topratedPage {
+		padding: 24px 16px;
+	}
+
+	.topratedCard {
+		width: 100%;
+	}
+
+	.topratedGrid {
+		grid-template-columns: 1fr;
+	}
+
+	.coverBox {
+		height: 260px;
+	}
+
+	.actionRow {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

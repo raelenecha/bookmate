@@ -1,0 +1,354 @@
+.home {
+  padding: 40px 32px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+}
+
+.panel {
+  .panel__title {
+    font-size: 22px;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  i {
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-shrink: 0;
+  gap: 14px;
+  width: 400px;
+  align-items: center;
+  background: #b5bfca;
+  border-radius: 14px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+
+  &--wide {
+    border-radius: 26px;
+  }
+
+  &--clickable:hover {
+    filter: brightness(0.98);
+  }
+
+  &__img {
+    width: 70px;
+    height: 96px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    flex: 0 0 auto;
+    display: block;
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card__btn {
+    width: max-content;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #083e7b;
+    color: white;
+    cursor: pointer;
+  }
+
+  .card__tags {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .card__author {
+    font-size: 14px;
+  }
+}
+
+.stars {
+  font-size: 18px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  p {
+    font-size: 13px;
+  }
+
+  span {
+    color: orange;
+    cursor: pointer;
+  }
+}
+
+.star {
+  opacity: 0.35;
+
+  &--on {
+    opacity: 1;
+  }
+}
+
+.overview {
+  background: #d6dde5;
+  border-radius: 16px;
+  padding: 22px;
+
+  &__welcome {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 22px;
+  }
+
+  &__actions {
+    display: grid;
+    gap: 30px;
+    margin: 20px 150px;
+    height: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__btn {
+    display: block;
+    text-align: right;
+    padding: 14px 16px;
+    padding-left: 100px;
+    border-radius: 10px;
+    background: #b5bfca;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    font-size: 30px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+
+    &::before {
+      font: var(--fa-font-solid);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #d6dde5;
+      font-size: 60px;
+      width: 120px;
+      scale: 1.7;
+      left: -18%;
+      transform-origin: top center;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:first-of-type::before {
+      content: "\f02d";
+    }
+
+    &:nth-of-type(2)::before {
+      content: "\f007";
+    }
+
+    &:last-of-type::before {
+      content: "\f559";
+    }
+
+    &:hover {
+      filter: brightness(0.88);
+      scale: 1.05;
+    }
+  }
+}
+
+.return_btn {
+  padding: 5px 10px;
+  background: #083e7b;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: max-content;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+.link-reset {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.panel__titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.panel__bookIconBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 10px;
+
+  i {
+    font-size: 18px;
+    width: auto;
+    margin: 0;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.06);
+  }
+}
+
+.panel__titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.panel__bookIconBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 10px;
+
+  i {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* === Book Catalogue floating icon (Top Ratings panel ONLY) === */
+
+.panel__titleWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Floating book button */
+.bookCatalogueBtn {
+  position: absolute;
+  left: -80px;
+  top: -65px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+
+  background: #083e7b;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+  i {
+    font-size: 20px;
+  }
+
+  span {
+    white-space: nowrap;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+  }
+}
+
+/* ============================= */
+/* Header actions (Home page)    */
+/* ============================= */
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Book Catalogue button beside Sign out */
+.headerBookBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+
+  background: #083e7b;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  i {
+    font-size: 18px;
+  }
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+}
+
+.waitlist {
+  padding: 5px 10px;
+  background: #083e7b;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  width: max-content;
+}
+
+.waitlist_panel {
+  padding: 20px 150px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  h2 i {
+    margin-right: 10px;
+  }
+
+  .stack {
+    overflow-x: auto;
+    display: flex;
+    gap: 10px;
+  }
+}

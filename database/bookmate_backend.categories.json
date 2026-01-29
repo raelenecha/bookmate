@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "696897a51929d4cd02125456"
+  },
+  "name": "Dystopian"
+},
+{
+  "_id": {
+    "$oid": "696897a51929d4cd02125457"
+  },
+  "name": "Non-Fiction"
+},
+{
+  "_id": {
+    "$oid": "696897a51929d4cd02125459"
+  },
+  "name": "Programming"
+},
+{
+  "_id": {
+    "$oid": "696897a51929d4cd02125458"
+  },
+  "name": "Self-Help"
+},
+{
+  "_id": {
+    "$oid": "696897a51929d4cd02125454"
+  },
+  "name": "Fiction"
+},
+{
+  "_id": {
+    "$oid": "696897a51929d4cd02125455"
+  },
+  "name": "Fantasy"
+}]

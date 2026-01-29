@@ -1,0 +1,28 @@
+.not_found {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+        background: #083e7b;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}

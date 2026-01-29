@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "696897301929d4cd02125447"
+  },
+  "title": "The Hunger Games",
+  "author": "Suzanne Collins",
+  "categoryId": "696897a51929d4cd02125456",
+  "image": "/images/hungerbook.jpg",
+  "reservedBy": "696897571929d4cd0212544f",
+  "rating": [
+    2,
+    1
+  ],
+  "dueDate": {
+    "$date": "2026-02-05T07:35:32.489Z"
+  },
+  "description": "A dystopian novel set in a future society where teenagers are forced to participate in a televised survival competition. The story follows Katniss Everdeen as she navigates danger, sacrifice, and resistance against an oppressive regime, highlighting themes of power, survival, and social inequality.",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "696897301929d4cd02125448"
+  },
+  "title": "Harry Potter and the Philosopher's Stone",
+  "author": "J.K. Rowling",
+  "categoryId": "696897a51929d4cd02125455",
+  "image": "/images/harrypotterbook.jpg",
+  "reservedBy": "696897571929d4cd0212544f",
+  "rating": [
+    3,
+    5
+  ],
+  "dueDate": {
+    "$date": "2026-02-05T07:49:12.986Z"
+  },
+  "description": "A fantasy novel that follows young wizard Harry Potter as he discovers his magical heritage and begins his first year at Hogwarts School of Witchcraft and Wizardry. Along the way, he uncovers secrets about his past and confronts dark forces linked to the wizarding world.",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "696897301929d4cd02125449"
+  },
+  "title": "Tuesdays with Morrie",
+  "author": "Mitch Albom",
+  "categoryId": "696897a51929d4cd02125454",
+  "image": "/images/mitchalbombook.jpg",
+  "reservedBy": null,
+  "rating": [],
+  "dueDate": null,
+  "description": "A reflective memoir about the author’s weekly conversations with his former professor, Morrie Schwartz, who is facing a terminal illness. The book explores themes of life, death, relationships, and what truly matters."
+},
+{
+  "_id": {
+    "$oid": "696897301929d4cd0212544b"
+  },
+  "title": "Learning React (Beginner Guide)",
+  "author": "TP Library Collection",
+  "categoryId": "696897a51929d4cd02125459",
+  "image": "/images/reactbook.png",
+  "reservedBy": "696897571929d4cd0212544f",
+  "rating": [
+    3,
+    5
+  ],
+  "dueDate": {
+    "$date": "2026-02-01T00:00:00.000Z"
+  },
+  "description": "An introductory guide designed to help beginners understand the fundamentals of React. It covers core concepts such as components, state, props, and basic application structure, making it suitable for learners new to front-end development.",
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "696897301929d4cd02125446"
+  },
+  "title": "Wonder",
+  "author": "R. J. Palacio",
+  "categoryId": "696897a51929d4cd02125454",
+  "image": "/images/wonderbook.jpg",
+  "reservedBy": "",
+  "rating": [
+    4
+  ],
+  "dueDate": null,
+  "description": "A heartwarming novel about a boy with facial differences entering mainstream school for the first time. The story highlights empathy, kindness, and acceptance through multiple perspectives of students and family members."
+},
+{
+  "_id": {
+    "$oid": "696897301929d4cd0212544a"
+  },
+  "title": "Lee Kuan Yew: The Man and His Ideas",
+  "author": "Han Fook Kwang, Warren Fernandez, Sumiko Tan",
+  "categoryId": "696897a51929d4cd02125457",
+  "image": "/images/lkybook.jpg",
+  "reservedBy": "696897571929d4cd02125450",
+  "rating": [],
+  "dueDate": {
+    "$date": "2026-02-05T08:03:56.575Z"
+  },
+  "description": "A biographical work that examines the leadership, philosophy, and political ideas of Singapore’s founding Prime Minister. The book provides insights into his influence on Singapore’s development and governance."
+}]

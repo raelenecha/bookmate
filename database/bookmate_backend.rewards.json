@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "696897d41929d4cd02125466"
+  },
+  "name": "Active Reader",
+  "points": 100,
+  "description": "Awarded for multiple books reserved"
+},
+{
+  "_id": {
+    "$oid": "696897d41929d4cd02125467"
+  },
+  "name": "Waitlist Joiner",
+  "points": 30,
+  "description": "Awarded upon joining a waitlist"
+},
+{
+  "_id": {
+    "$oid": "696897d41929d4cd02125465"
+  },
+  "name": "First Book Reserved",
+  "points": 50,
+  "description": "Awarded upon reserving the first book"
+}]
