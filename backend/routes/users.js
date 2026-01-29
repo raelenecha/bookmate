@@ -7,7 +7,7 @@ import bcrypt from "bcrypt";
 const router = express.Router();
 
 // GET /users for leaderboard
-router.get("/", async (req, res) => {
+router.get("/", checkAuth, async (req, res) => {
 	try {
 		const users = await User.find().select("-password").sort({ points: -1 }).limit(10);
 		const normalized = users.map(u => u.toObject());
@@ -42,7 +42,7 @@ router.put("/", checkAuth, async (req, res) => {
 });
 
 // POST /users for account creation
-router.post("/", async (req, res) => {
+router.post("/", checkAuth, async (req, res) => {
 	try {
 		const { name, password, role } = req.body;
 		if (!name || !password || !role) return res.status(400).json({ message: "Missing required fields" });
