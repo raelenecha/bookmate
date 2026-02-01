@@ -42,6 +42,17 @@ router.get('/top-rated', async (req, res) => {
 	}
 });
 
+// GET /categories for getting all categories of books (admin only)
+router.get('/categories', async (req, res) => {
+	try {
+		const categories = await Categories.find();
+		const normalized = categories.map(c => c.toObject());
+		return res.json(normalized);
+	} catch (err) {
+		return res.status(500).json({ message: err.message });
+	}
+})
+
 // GET /books/{id} for getting a specific book details
 router.get("/:id", async (req, res) => {
 	try {
@@ -76,17 +87,6 @@ router.patch("/:id", async (req, res) => {
 		return res.status(500).json({ message: err.message });
 	}
 });
-
-// GET /categories for getting all categories of books (admin only)
-router.get('/categories', async (req, res) => {
-	try {
-		const categories = await Categories.find();
-		const normalized = categories.map(c => c.toObject());
-		return res.json(normalized);
-	} catch (err) {
-		return res.status(500).json({ message: err.message });
-	}
-})
 
 // Helper function to check if an image URL is valid
 const isValidImageUrl = async (url) => {
